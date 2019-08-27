@@ -11,5 +11,6 @@
     <bean id="message" class="fr.formation.inti.beans.MessageBean" factory-method="createInstance" >
     <constructor-arg  value="wesh ma gueule"></constructor-arg>
     </bean>
+    
 
 </beans>
