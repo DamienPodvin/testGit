@@ -1,7 +1,8 @@
 package fr.formation.inti.beans;
 
-import javax.management.InstanceAlreadyExistsException;
+import org.springframework.stereotype.Component;
 
+@Component(value ="mess")
 public class MessageBean {
 
 	private String mess;
@@ -15,6 +16,7 @@ public class MessageBean {
 	}
 
 	public MessageBean() {
+		System.out.println("creation par defaut du message");
 	}
 
 	static MessageBean createInstance(String y) {

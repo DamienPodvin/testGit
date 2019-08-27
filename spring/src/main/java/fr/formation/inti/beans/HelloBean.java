@@ -1,9 +1,14 @@
 package fr.formation.inti.beans;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
-
+@Component
 public class HelloBean {
 	
+	
+	@Autowired
 	MessageBean m;
 	
 	
@@ -16,12 +21,14 @@ public class HelloBean {
 	}
 
 	public HelloBean() {
-		System.out.println("par default");
+		System.out.println("hellobean par default");
 	}
 	
 	public HelloBean(int x ) {
-		System.out.println("le chiffre testant un constructeur par default est" +x);
+		System.out.println("creation hellobean" +x);
 	}
+	
+	
 	
 	public void hello() {
 		
