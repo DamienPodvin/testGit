@@ -9,6 +9,7 @@ public class HelloBean {
 	
 	
 	@Autowired
+	@Qualifier("mess")
 	MessageBean m;
 	
 	
