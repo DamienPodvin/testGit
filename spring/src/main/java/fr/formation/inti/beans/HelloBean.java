@@ -20,7 +20,7 @@ public class HelloBean {
 	}
 	
 	public HelloBean(int x ) {
-		System.out.println("le chiffre est" +x);
+		System.out.println("le chiffre testant un constructeur par default est" +x);
 	}
 	
 	public void hello() {
